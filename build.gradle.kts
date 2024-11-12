@@ -27,7 +27,7 @@ repositories {
     }
     maven {
         // A repository must be speficied for some reason. "registry" is a dummy.
-        url = uri("https://maven.pkg.github.com/E85Addict/registry")
+        url = uri("https://maven.pkg.github.com/okkidwi/registry")
         credentials {
             username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
             password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
@@ -71,7 +71,7 @@ tasks {
             exclude(dependency("org.jetbrains.kotlin:.*"))
             exclude(dependency("org.bouncycastle:.*"))
             exclude(dependency("app.revanced:.*"))
-            exclude(dependency("e85.app.revanced:.*"))
+            exclude(dependency("okkidwidrive.app.revanced:.*"))
         }
     }
 
